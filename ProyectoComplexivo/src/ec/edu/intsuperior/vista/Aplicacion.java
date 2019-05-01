@@ -4,7 +4,7 @@ package ec.edu.intsuperior.vista;
 
 public class Aplicacion {
     public static void main(String[] args) {
-        validarParidad();
+        factorial();
         
     }
     
@@ -21,4 +21,13 @@ public class Aplicacion {
         
         
     }
+    public static void factorial(){
+        int x=metA();
+        int acu=1;
+        for (int i = 1; i <= x; i++) {
+           acu *=i; 
+        }
+        System.out.println("el factorial de: "+x+"es: "+acu);
+    }
+    
 }
